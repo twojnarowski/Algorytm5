@@ -20,7 +20,7 @@ foreach (var letterGroup in _wordDictionary.GroupBy(w => w.letterGroup).Select(w
             anagrams.Add(word);
         }
     }
-    if (anagrams.Count > 1)
+    if (anagrams.Count > 0)
     {
         List<string> anagram = new();
         foreach (string word in anagrams)
